@@ -1,0 +1,51 @@
+/*================Responsive Styles===========*/
+
+@media (max-width: 768px){
+
+    .hamburger{
+        display: flex;
+        z-index: 20;
+    }
+
+    nav ul.nav-links{
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        max-width: 300px;
+        height: 100vh;
+        background-color: var(--blue-color);
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 2rem;
+        gap: 2rem;
+        transition: right 0.35s ease-in-out;
+        z-index: 15;
+    }
+
+    nav ul.nav-links.active{
+        right: 0;
+    }
+
+    .img-overlay h2{
+        font-size: 1.8rem;
+    }
+
+    .img-overlay p{
+        font-size: 1rem;
+        letter-spacing: 2px;
+    }
+
+    .slider-container,
+    .slider-container .swiper-slide{
+        height: 70vh;
+        min-height: 400px;
+    }
+}
+
+@media (max-width: 480px){
+    .img-overlay h2{
+        font-size: 1.4rem;
+    }
+}

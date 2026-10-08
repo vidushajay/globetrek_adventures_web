@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reponsive Tour and Travel Website</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="../css/responsive.css">
+
+  
+</head>
+<body>
+   <!--=============Header=======================-->
+   <header>
+    <div class="container">
+     <nav>
+        <div class="logo"> 
+            <img src="../img/logo.png" alt="logo">
+        </div> 
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-tab-dark active">Home</a></li>
+            <li><a href="../php/login.php" class="nav-tab-dark">Login</a></li>
+            <li><a href="../php/destinations.php">Tour</a></li>
+            <li><a href="../php/activities.php">Activities</a></li>
+            <li><a href="../php/about.php">About</a></li>
+            <li><a href="../php/contact.php">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+     </nav>
+    </div>
+   </header>
+   <!--=============Header end=======================-->
+   <!--=============Showcase=======================-->
+
+   <main>
+       <div class="slider-container swiper">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide overlay">
+              <img src="../img/Slide_1.jpg" alt="slider1">
+              <div class="img-overlay">
+                <p>Explore the beauty of Sri Lanka with us</p>
+                <h2>Discover the <span>Wonders of Sri Lanka</span></h2>
+                <h2>with our guide</h2>
+              </div>
+            </div>
+
+            <div class="swiper-slide overlay">
+              <img src="../img/Slide_2.png" alt="slider2">
+              <div class="img-overlay">
+                <p>Explore the beauty of Sri Lanka with us</p>
+                <h2>Discover the <span>Wonders of Sri Lanka</span></h2>
+                <h2>with our guide</h2>
+              </div>
+            </div>
+
+            <div class="swiper-slide overlay">
+              <img src="../img/Slide_3.jpg" alt="slider3">
+              <div class="img-overlay">
+                <p>Explore the beauty of Sri Lanka with us</p>
+                <h2>Discover the <span>Wonders of Sri Lanka</span></h2>
+                <h2>with our guide</h2>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Swiper navigation & pagination controls -->
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+   <!--=============Showcase end=======================-->
+   </main>
+
+    <!-- Swiper library must load BEFORE our swiper.js init script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="../js/swiper.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>

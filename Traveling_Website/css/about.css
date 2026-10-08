@@ -1,0 +1,89 @@
+/*================About Page===========*/
+
+.about-page{
+    padding: 3rem 0 5rem;
+}
+
+.about-page .headings{
+    text-align: center;
+}
+
+.about-page .page-intro{
+    text-align: center;
+    max-width: 700px;
+    margin: 0.5rem auto 3rem;
+    color: #666;
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+.about-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.about-card{
+    background: var(--white-color);
+    border: 1px solid var(--light-gray-color);
+    border-radius: 10px;
+    padding: 1.8rem;
+}
+
+.about-card h3{
+    font-family: "ubuntu";
+    color: var(--blue-color);
+    margin-bottom: 0.7rem;
+}
+
+.about-card p{
+    color: #555;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.about-offer-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.offer-item{
+    text-align: center;
+    padding: 1.5rem 1rem;
+}
+
+.offer-item i{
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 0.8rem;
+}
+
+.offer-item h4{
+    font-family: "ubuntu";
+    color: var(--blue-color);
+    margin-bottom: 0.5rem;
+}
+
+.offer-item p{
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.about-cta{
+    text-align: center;
+    margin-top: 3.5rem;
+    padding: 2.5rem 1rem;
+    background: var(--blue-color);
+    border-radius: 10px;
+}
+
+.about-cta .secondary-headings{
+    color: var(--white-color);
+    margin-bottom: 1.2rem;
+}
+
+/*================About Page end===========*/

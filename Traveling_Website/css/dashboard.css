@@ -1,0 +1,197 @@
+/*================Dashboard (Staff/Admin)===========*/
+
+.dashboard{
+    padding: 2.5rem 2rem;
+}
+
+.dashboard-sub{
+    margin-bottom: 2rem;
+    color: #555;
+}
+
+.dashboard-sub a{
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.table-wrap{
+    overflow-x: auto;
+    margin-bottom: 3rem;
+}
+
+.dash-table{
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+.dash-table th,
+.dash-table td{
+    padding: 0.7rem;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+    vertical-align: top;
+}
+
+.dash-table thead th{
+    border-bottom: 2px solid var(--primary-color);
+    font-weight: 700;
+}
+
+.status-badge{
+    display: inline-block;
+    padding: 0.25rem 0.6rem;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.status-pending{ background: #fff3cd; color: #856404; }
+.status-contacted{ background: #d1ecf1; color: #0c5460; }
+.status-confirmed{ background: #d4edda; color: #155724; }
+.status-cancelled{ background: #f8d7da; color: #721c24; }
+
+.inline-form{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.inline-form select,
+.inline-form input,
+.inline-form textarea{
+    padding: 0.4rem;
+    border: 1px solid var(--light-gray-color);
+    border-radius: 4px;
+    font-size: 0.85rem;
+}
+
+.package-edit-form textarea{
+    width: 100%;
+    min-width: 200px;
+}
+
+.package-edit-form input[type="number"]{
+    width: 90px;
+}
+
+.small-btn{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border: none;
+    padding: 0.4rem 0.9rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.85rem;
+}
+
+.small-btn:hover{
+    opacity: 0.9;
+}
+
+/* ---- Sales report cards (admin dashboard) ---- */
+.report-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1.2rem;
+    margin-bottom: 3rem;
+}
+
+.report-card{
+    background-color: #f5f7fa;
+    border-left: 4px solid var(--primary-color);
+    border-radius: 6px;
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.report-card:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+}
+
+.filter-indicator{
+    background-color: #eef4ff;
+    border-left: 4px solid var(--primary-color);
+    padding: 0.6rem 1rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.filter-indicator a{
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.report-value{
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--blue-color);
+}
+
+.report-label{
+    font-size: 0.85rem;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* ---- Create staff/admin form ---- */
+.dashboard-form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    max-width: 460px;
+    background-color: #f5f7fa;
+    padding: 1.8rem;
+    border-radius: 8px;
+    margin-bottom: 3rem;
+}
+
+.dashboard-form label{
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-top: 0.8rem;
+}
+
+.dashboard-form input,
+.dashboard-form select{
+    padding: 0.65rem;
+    border: 1px solid var(--light-gray-color);
+    border-radius: 4px;
+    font-size: 0.95rem;
+    width: 100%;
+}
+
+.dashboard-form input:focus,
+.dashboard-form select:focus{
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+.dashboard-form button{
+    margin-top: 1.3rem;
+    width: auto;
+    align-self: flex-start;
+    padding: 0.7rem 1.8rem;
+}
+
+/*================Dashboard end===========*/
+
+/* Booking action cell: stack the status dropdown above the Update button so it never scrolls off-screen */
+.booking-action-form{
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.4rem;
+    min-width: 130px;
+}
+.booking-action-form .small-btn{
+    width: 100%;
+}
